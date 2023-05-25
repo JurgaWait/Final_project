@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 export const ClientForm = (props) => { 
     const [name, setName] = useState('');
@@ -7,11 +7,17 @@ export const ClientForm = (props) => {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
 
-    const navigate = useNavigate();
-
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(email)
+
+        const body = {
+            name, surname, email, phone
+        }
+
+        axios
+        .post("http://localhost:5000/clients", body)
+        .then((response) => console.log('seccessful response', response))
+        .catch((err) => console.log('err', err));
     }
 
     return (
@@ -30,7 +36,7 @@ export const ClientForm = (props) => {
             <label htmlFor="phone">telefono numeris::</label>
             <input value={phone} onChange={(e) => setPhone(e.target.value)}
             type="phone" placeholder="+370" id="phone" name="phone" />
-            <button className="form-btn" type="submit" onClick={() => navigate("/list")}>Registruoti</button>
+            <button className="form-btn" type="submit">Registruoti</button>
         </form>
     </div>
     )

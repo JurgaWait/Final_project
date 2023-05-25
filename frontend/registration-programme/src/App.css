@@ -8,14 +8,14 @@ body {
   background-image: linear-gradient(109deg, #8864c6, #6ab5de 48%, #b2f37d);
 }
 
-.auth-form-container, .login-form, .register-form, .client_register-form {
+.login-form, .register-form, .client_register-form {
   display: flex;
   flex-direction: column;
 }
+
 .reg-form-container {
   color: #8864c6
 }
-
 
 @media screen and (min-width: 600px) {
   .auth-form-container {
@@ -55,4 +55,46 @@ button {
   background: none;
   color: white;
   text-decoration: underline;
+}
+*/
+/* .navbar-container {
+  width: 100%;
+} */
+#menu-links {
+    height: 100px;
+    /* width: 100%; */
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    /* display: block;
+    width: 10%; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 0 20px; 
+    margin: 0;
+} 
+
+a {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #8864c6;
+    padding: 10px;
+    }
+
+/* .clients-list {
+  display: flex;
+
+} */
+
+td {
+  border: 0.8px solid white;
+}
+table, th {
+  border: 1.5px solid #b2f37d;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px 20px;
 }

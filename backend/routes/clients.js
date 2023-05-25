@@ -19,6 +19,14 @@ router.post("/clients", (req, res) => {
     dbConnection.execute(postQuery, [name, surname, email, phone], (err, result) => {
         defaultCallback(err, result, res);
     });
+});
+
+router.delete("/clients/:id", (req, res) => {
+    const {id} = req.params;
+
+    dbConnection.execute(`DELETE FROM clients WHERE id=(?)`, [id], (err, result) => {
+        defaultCallback(err, result, res);
+    })
 })
 
 module.exports = router;
