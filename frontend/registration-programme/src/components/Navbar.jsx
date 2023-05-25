@@ -11,7 +11,7 @@ export const Navbar = () => {
         <a href="/register">Užsiregistruoti</a>
         <a href="/form">Naujas dalyvis</a>
         <a href="/list">Dalyvių sąrašas</a>
-        <button type="submit" onClick={() => navigate("/")}>Atsijungti</button>
+        <button className="form-btn" type="submit" onClick={() => navigate("/")}>Atsijungti</button>
         </nav>
     </div>
 )}

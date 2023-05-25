@@ -42,6 +42,7 @@ if (isLoading) {
             <th>Pavardė</th>
             <th>El. paštas</th>
             <th>Telefono nr.</th>
+            <th>Ištrinti</th>
         </tr>
         {clients.map((client) => {
             console.log("post", client);
@@ -52,7 +53,7 @@ if (isLoading) {
                 <td>{client.surname}</td>
                 <td>{client.email}</td>
                 <td>{client.phone}</td>
-                <td><button onClick={() => deleteHandler(client.id)}>ištrinti</button></td>
+                <td><button className="form-btn" onClick={() => deleteHandler(client.id)}>X</button></td>
             </tr>
             </>
         )})}

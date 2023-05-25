@@ -13,10 +13,6 @@ body {
   flex-direction: column;
 }
 
-.reg-form-container {
-  color: #8864c6
-}
-
 @media screen and (min-width: 600px) {
   .auth-form-container {
     padding: 2rem;
@@ -75,10 +71,11 @@ button {
 } 
 
 a {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     text-decoration: none;
     color: #8864c6;
+    text-shadow: 2px 2px 12px white;
     padding: 10px;
     }
 
