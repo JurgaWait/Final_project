@@ -1,15 +1,15 @@
-import { createContext, useState } from "react";
+// import { createContext, useState } from "react";
 
-export const AuthenticationContext = createContext();
+// export const AuthenticationContext = createContext();
 
-export const AuthenticationWrapper = ({ children }) => {
-    const [isSignedIn, setIsSignedIn] = useState(false);
-                                  //true
-    const handleAuthentication = (data) => setIsSignedIn(data);
+// export const AuthenticationWrapper = ({ children }) => {
+//     const [isSignedIn, setIsSignedIn] = useState(false);
+//                                   //true
+//     const handleAuthentication = (data) => setIsSignedIn(data);
 
-    return (
-        <AuthenticationContext.Provider value={{ isSignedIn, setIsSignedIn: handleAuthentication}}>
-            {children}
-        </AuthenticationContext.Provider>
-    )
-}
+//     return (
+//         <AuthenticationContext.Provider value={{ isSignedIn, setIsSignedIn: handleAuthentication}}>
+//             {children}
+//         </AuthenticationContext.Provider>
+//     )
+// }

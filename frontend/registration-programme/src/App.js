@@ -10,7 +10,7 @@ import { Navbar } from "./components/Navbar";
 function App() {
   
   return (
-    <>
+    <div className="App">
     <Navbar/>
     <Routes>
       <Route element={<Login />} path="/"/>
@@ -18,7 +18,7 @@ function App() {
       <Route element={<ClientForm />} path="/form"/>
       <Route element={<ClientList />} path="/list"/>
     </Routes>
-    </>
+    </div>
   );
 }
 

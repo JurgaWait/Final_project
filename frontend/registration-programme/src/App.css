@@ -1,6 +1,7 @@
-body {
+.App {
   text-align: center;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
@@ -41,7 +42,6 @@ button {
   border-radius: 10px;
   cursor: pointer;
   color: #ab89e6;
-
 }
 
 .form-btn {
@@ -52,20 +52,10 @@ button {
   color: white;
   text-decoration: underline;
 }
-*/
-/* .navbar-container {
-  width: 100%;
-} */
+
 #menu-links {
     height: 100px;
-    /* width: 100%; */
-    opacity: 1;
-    position: sticky;
     top: 0;
-    /* display: block;
-    width: 10%; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
     padding: 0 20px; 
     margin: 0;
 } 
@@ -78,11 +68,6 @@ a {
     text-shadow: 1px 1px 2px white;
     padding: 10px;
     }
-
-/* .clients-list {
-  display: flex;
-
-} */
 
 td {
   border: 0.8px solid white;
